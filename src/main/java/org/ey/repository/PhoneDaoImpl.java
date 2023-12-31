@@ -1,6 +1,6 @@
-package org.pruebaEY.repository;
+package org.ey.repository;
 
-import org.pruebaEY.model.Phone;
+import org.ey.model.Phone;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

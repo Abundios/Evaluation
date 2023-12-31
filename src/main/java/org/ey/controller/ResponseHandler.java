@@ -1,4 +1,4 @@
-package org.pruebaEY.controller;
+package org.ey.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

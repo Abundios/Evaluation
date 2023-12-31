@@ -1,4 +1,4 @@
-package org.pruebaEY.model;
+package org.ey.model;
 
 import java.io.Serializable;
 

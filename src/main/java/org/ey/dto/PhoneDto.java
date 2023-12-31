@@ -1,4 +1,4 @@
-package org.pruebaEY.dto;
+package org.ey.dto;
 
 public class PhoneDto {
     private String number;

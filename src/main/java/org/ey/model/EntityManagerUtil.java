@@ -1,4 +1,4 @@
-package org.pruebaEY.model;
+package org.ey.model;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

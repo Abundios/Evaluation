@@ -1,16 +1,15 @@
-package org.pruebaEY.tomcat;
+package org.ey.tomcat;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-
+import org.ey.config.AppConfig;
+import org.ey.config.WebConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import org.pruebaEY.config.AppConfig;
-import org.pruebaEY.config.WebConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 
 public class WebInit implements WebApplicationInitializer {
 

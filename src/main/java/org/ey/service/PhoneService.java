@@ -1,7 +1,7 @@
-package org.pruebaEY.service;
+package org.ey.service;
 
-import org.pruebaEY.model.Phone;
-import org.pruebaEY.repository.PhoneDao;
+import org.ey.model.Phone;
+import org.ey.repository.PhoneDao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;

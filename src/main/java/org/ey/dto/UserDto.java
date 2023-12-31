@@ -1,12 +1,11 @@
-package org.pruebaEY.dto;
+package org.ey.dto;
 
-import javax.persistence.Column;
+import org.ey.model.Phone;
+import org.ey.model.User;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import org.pruebaEY.model.Phone;
-import org.pruebaEY.model.User;
 
 public class UserDto {
 

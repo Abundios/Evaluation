@@ -1,6 +1,6 @@
-package org.pruebaEY.repository;
+package org.ey.repository;
 
-import org.pruebaEY.model.Phone;
+import org.ey.model.Phone;
 
 import java.util.List;
 

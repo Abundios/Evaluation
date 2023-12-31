@@ -1,8 +1,6 @@
-package org.pruebaEY.model;
+package org.ey.model;
 
 import javax.persistence.*;
-
-
 
 @Entity
 @Table(name = "phones")

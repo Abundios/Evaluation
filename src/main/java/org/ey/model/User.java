@@ -1,48 +1,20 @@
-package org.pruebaEY.model;
+package org.ey.model;
 
 //import org.hibernate.annotations.GenericGenerator;
 //import org.hibernate.annotations.Type;
 
 //import java.time.OffsetDateTime;
-import java.util.*;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 
 
 @Entity
 @Table(name = "users")
 public class User {
-
-    //@Id
-    /*
-    @Column(nullable = false, updatable = false)
-    @SequenceGenerator(
-            name = "primary_sequence",
-            sequenceName = "primary_sequence",
-            allocationSize = 1,
-            initialValue = 10000
-    )
-    @GeneratedValue(
-            strategy = GenerationType.IDENTITY,
-            generator = "primary_sequence"
-    )
-     */
-    //private Long id;
-    //@Id
-    //@Column(name = "id")
-    //@Type(type = "uuid-char")
-    //private UUID id;// = UUID.randomUUID();
-    //@Id
-    //@GeneratedValue(generator = "UUID")
-    //@GenericGenerator(
-    //        name = "UUID",
-    //        strategy = "org.hibernate.id.UUIDGenerator"
-    //)
-    //private UUID id;
-
-    //@Id
-    //@GeneratedValue(strategy = GenerationType.UUID)
-   // private UUID id;
 
     @Id
     @GeneratedValue
@@ -120,9 +92,6 @@ public class User {
     @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "userId", referencedColumnName = "id")
     List < Phone > phones = new ArrayList< >();
-
-    //@Column(nullable = false, unique = true)
-    //private String phones;
 
     public Integer getId() {
         return id;

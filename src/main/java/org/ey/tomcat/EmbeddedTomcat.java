@@ -1,21 +1,17 @@
-package org.pruebaEY.tomcat;
-
-import java.util.Date;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+package org.ey.tomcat;
 
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.core.StandardContext;
 import org.apache.catalina.startup.Tomcat;
-//import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import java.util.Date;
+
 @Component
 public class EmbeddedTomcat {
-
-    //private static final Logger log = org.apache.log4j.Logger.getLogger(EmbeddedTomcat.class);
 
     @Value("${tomcat.web.content.folder.path:src/main/webapp/}")
     private String webContentFolder;
@@ -37,7 +33,6 @@ public class EmbeddedTomcat {
         StandardContext ctx = (StandardContext) tomcat.addWebapp("", webContentFolder);
         ctx.setParentClassLoader(AppLauncher.class.getClassLoader());
         tomcat.start();
-        //log.info("Tomcat Server Started at " + new Date());
         System.out.println("Tomcat Server Started at " + new Date());
         tomcat.getServer().await();
 

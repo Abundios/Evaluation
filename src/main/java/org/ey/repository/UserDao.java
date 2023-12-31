@@ -1,11 +1,9 @@
-package org.pruebaEY.repository;
+package org.ey.repository;
+
+import org.ey.model.User;
 
 import java.util.List;
 
-import org.pruebaEY.model.User;
-
-//public interface UserRepository extends JpaRepository<User, Long> {
-//public interface UserRepository extends CrudRepository<User, Long> {
 public interface UserDao {
 
     void persist(User user);
